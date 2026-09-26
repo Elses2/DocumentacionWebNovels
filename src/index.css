@@ -208,11 +208,11 @@ body sans-serif, .sans {
   gap: 8px 18px;
   align-items: center;
   padding: 10px 16px;
-  border-bottom: 1px solid #d4d0c8;
-  background: #fdfaf5;
+  border-bottom: 1px solid #d1d5db;
+  background: #f9fafb;
   font-size: 13px;
-  color: #1a1a1a;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #111827;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .edt-legend {
   display: flex;
@@ -225,38 +225,35 @@ body sans-serif, .sans {
   align-items: center;
   gap: 6px;
   font-size: 12px;
-  color: #333;
+  color: #111827;
 }
 .edt-legend i {
   width: 14px;
   height: 14px;
   border: 2px solid;
   display: inline-block;
-  border-radius: 2px;
 }
 .edt-bar button {
   font: inherit;
   padding: 4px 12px;
-  border: 1px solid #92400e;
-  background: #fefefe;
-  color: #1a1a1a;
+  border: 1px solid #6b7280;
+  background: #fff;
+  color: #111827;
   cursor: pointer;
-  border-radius: 3px;
-  font-size: 12px;
+  border-radius: 4px;
 }
 .edt-bar button:hover {
-  background: #fef9f0;
-  border-color: #b45309;
+  background: #e5e7eb;
 }
 .edt-bar button:focus-visible {
-  outline: 2px solid #b45309;
+  outline: 3px solid #f59e0b;
   outline-offset: 2px;
 }
 
 .edt-vista {
   overflow: auto;
   padding: 24px 16px 48px;
-  background: #fefefe;
+  background: #ffffff;
 }
 .edt-lienzo {
   width: max-content;
@@ -265,19 +262,19 @@ body sans-serif, .sans {
 
 .edt-node {
   display: block;
-  padding: 5px 8px;
+  padding: 6px 8px;
   text-align: center;
   font-size: 12px;
   font-weight: 700;
   line-height: 1.3;
   border: 2px solid;
-  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
-  background: #fefefe;
-  color: #1a1a1a;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.85);
+  background: #fff;
+  color: #0f172a;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .edt-node a {
-  color: #92400e;
+  color: #1d4ed8;
   text-decoration: underline;
 }
 .edt-node a:hover {
@@ -288,13 +285,13 @@ body sans-serif, .sans {
   background: #e5e7eb;
   border-color: #374151;
   font-size: 14px;
-  padding: 8px 14px;
+  padding: 9px 14px;
 }
 .edt-fase {
   background: #dbeafe;
   border-color: #1d4ed8;
   font-size: 13px;
-  padding: 7px 10px;
+  padding: 8px;
 }
 .edt-sub {
   background: #ffedd5;
@@ -313,7 +310,7 @@ body sans-serif, .sans {
   padding-bottom: 22px;
 }
 .edt-raiz-wrap .edt-node {
-  width: 300px;
+  width: 280px;
 }
 .edt-raiz-wrap::after {
   content: "";
@@ -331,14 +328,14 @@ body sans-serif, .sans {
 }
 .edt-col {
   position: relative;
-  padding: 22px 10px 0;
+  padding: 22px 12px 0;
   flex: 0 0 auto;
 }
-.edt-col-F1_1 { width: 360px; }
-.edt-col-F1_2 { width: 280px; }
-.edt-col-F1_3 { width: 340px; }
-.edt-col-F1_4 { width: 280px; }
-.edt-col-F1_5 { width: 280px; }
+.edt-col-F1_1 { width: 400px; }
+.edt-col-F1_2 { width: 300px; }
+.edt-col-F1_3 { width: 380px; }
+.edt-col-F1_4 { width: 340px; }
+.edt-col-F1_5 { width: 300px; }
 
 .edt-col::before {
   content: "";

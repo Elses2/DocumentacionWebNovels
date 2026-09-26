@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 
-/* ─── EDT Tree Data (exact replica of edt_elsesnovels.html) ─── */
+/* ─── EDT Tree Data (exact replica of EDT — ElsesNovels.html) ─── */
 const treeData = {
   label: 'ElsesNovels — Plataforma web de lectura de novelas',
   type: 'root',
@@ -25,21 +25,40 @@ const treeData = {
             { label: '1.2.2 Matriz de trazabilidad de requisitos', type: 'paquete' },
             { label: '1.2.3 Enunciado del alcance del proyecto', type: 'paquete' },
             { label: '1.2.4 Estructura de desglose del trabajo (EDT/WBS)', type: 'paquete' },
+            { label: '1.2.5 Diccionario de la EDT', type: 'paquete' },
           ]
         },
         {
-          label: '1.3 Planificación',
+          label: '1.3 Planificación de la dirección del proyecto',
           type: 'sub',
           children: [
-            { label: '1.3.1 Cronograma de hitos', type: 'paquete' },
-            { label: '1.3.2 Presupuesto y costos', type: 'paquete' },
+            { label: '1.3.1 Plan para la dirección del proyecto', type: 'paquete' },
+            { label: '1.3.2 Plan de gestión del alcance', type: 'paquete' },
+            { label: '1.3.3 Plan de gestión de los requisitos', type: 'paquete' },
+            { label: '1.3.4 Plan de gestión del cronograma', type: 'paquete' },
+            { label: '1.3.5 Lista de actividades y desglose de tareas', type: 'paquete' },
+            { label: '1.3.6 Plan de gestión de los costos', type: 'paquete' },
+            { label: '1.3.7 Plan de gestión de la calidad', type: 'paquete' },
+            { label: '1.3.8 Plan de gestión de los recursos', type: 'paquete' },
+            { label: '1.3.9 Plan de gestión de las comunicaciones', type: 'paquete' },
+            { label: '1.3.10 Plan de gestión de los riesgos', type: 'paquete' },
+            { label: '1.3.11 Plan de gestión de las adquisiciones', type: 'paquete' },
+            { label: '1.3.12 Plan de involucramiento de los interesados', type: 'paquete' },
+            { label: '1.3.13 Plan de gestión de los cambios', type: 'paquete' },
+            { label: '1.3.14 Plan de gestión de la configuración', type: 'paquete' },
+            { label: '1.3.15 Línea base del cronograma', type: 'paquete' },
+            { label: '1.3.16 Línea base de los costos', type: 'paquete' },
+            { label: '1.3.17 Ciclo de vida y enfoque de desarrollo', type: 'paquete' },
           ]
         },
         {
           label: '1.4 Seguimiento y control',
           type: 'sub',
           children: [
-            { label: '1.4.1 Registro de riesgos', type: 'paquete' },
+            { label: '1.4.1 Reportes de avance y seguimiento', type: 'paquete' },
+            { label: '1.4.2 Registro de riesgos', type: 'paquete' },
+            { label: '1.4.3 Registro de incidentes/problemas (Issue Log)', type: 'paquete' },
+            { label: '1.4.4 Registro de cambios (Change Log)', type: 'paquete' },
           ]
         },
         {
@@ -47,7 +66,7 @@ const treeData = {
           type: 'sub',
           children: [
             { label: '1.5.1 Acta de cierre del proyecto', type: 'paquete' },
-            { label: '1.5.2 Reportes de QA (integración, carga y estrés)', type: 'paquete' },
+            { label: '1.5.2 Registro de lecciones aprendidas', type: 'paquete' },
           ]
         },
       ]
@@ -231,10 +250,8 @@ function EDTNode({ node, depth }) {
 
   if (!hasChildren) {
     return (
-      <div style={{ marginLeft: depth > 0 ? `${Math.min(depth * 24, 200)}px` : '0' }}>
-        <div className={`edt-node edt-${node.type}`}>
-          {node.label}
-        </div>
+      <div className="edt-node edt-paq">
+        {node.label}
       </div>
     )
   }
